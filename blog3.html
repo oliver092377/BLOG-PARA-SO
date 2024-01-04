@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Blog</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/media-queries.css" />
+    <link rel="stylesheet" href="css/font/flaticon.css" />
+  </head>
+  <body>
+    <header>
+      <section class="header-icons-container">
+        <div class="icons">
+          <a href="https://www.facebook.com/profile.php?id=100014575630982&mibextid=ZbWKwL" target="_blank"
+            ><span class="flaticon-001-facebook"></span
+          ></a>
+          <a href="https://www.instagram.com/ale.19_4_mn?igsh=MnVqeHg5aGttZGFo" target="_blank"
+            ><span class="flaticon-011-instagram"></span
+          ></a>
+          <a href="https://www.youtube.com/channel/UCXTuwiVkukYONA1Y5TcEM_A" target="_blank"
+            ><span class="flaticon-008-youtube"></span
+          ></a>
+        </div>
+      </section>
+      <nav>
+        <section class="nav-logo-container">
+          <a href="index.html"
+            ><img src="assets/img/Logo-blanco.png" alt="Logo de mi blog"
+          /></a>
+        </section>
+        <section class="profile-link">
+          <a href="perfil.html">Sobre mi</a>
+        </section>
+      </nav>
+    </header>
+
+    <main>
+      <section class="grid-container blogpost-img-container">
+        <img src="assets/img/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg" alt="" >
+      </section>
+      <section class="blogpost-main-container">
+        <div class="grid-container-blog">
+          <h3>Noticias</h3>
+          <article>
+            <h1>Descubre que es estructura para almacenar datos más popular: "el Trie"</h1>
+            <p>
+              Introducidos en 1959 independientemente por Rene de la Briandais1​ y Edward Fredkin,2​ un trie es una estructura de datos de tipo árbol que permite la recuperación de información (de ahí su nombre del inglés reTRIEval). 
+            </p>
+            <p>
+              La información almacenada en un trie es un conjunto de claves, donde una clave es una secuencia de símbolos pertenecientes a un alfabeto. Las claves son almacenadas en las hojas del árbol y los nodos internos son pasarelas para guiar la búsqueda. El árbol se estructura de forma que cada letra de la clave se sitúa en un nodo de forma que los hijos de un nodo representan las distintas posibilidades de símbolos diferentes que pueden continuar al símbolo representado por el nodo padre. Por tanto la búsqueda en un trie se hace de forma similar a como se hacen las búsquedas en un diccionario:
+            </p>
+            <p><em>
+              Se empieza en la raíz del árbol. Si el símbolo que estamos buscando es A entonces la búsqueda continúa en el subárbol asociado al símbolo A que cuelga de la raíz. Se sigue de forma análoga hasta llegar al nodo hoja. Entonces se compara la cadena asociada al nodo hoja y si coincide con la cadena de búsqueda entonces la búsqueda ha terminado en éxito, si no entonces el elemento no se encuentra en el árbol.
+            </em></p>
+	     <p>
+              Por eficiencia se suelen eliminar los nodos intermedios que sólo tienen un hijo, es decir, si un nodo intermedio tiene sólo un hijo con cierto carácter entonces el nodo hijo será el nodo hoja que contiene directamente la clave completa.
+            </p>
+            <p>
+              Es muy útil para conseguir búsquedas eficientes en repositorios de datos muy voluminosos. La forma en la que se almacena la información permite hacer búsquedas eficientes de cadenas que comparten prefijos.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section class="contact-main-container">
+        <div class="contact-left">
+          <img src="assets/img/013-newsletter.png" alt="" />
+          <div class="left">
+            <a href="">Contacto</a>
+            <p>
+              Mandame un correo a la siguiente direccion: omayta@unsa.edu.pe
+            </p>
+          </div>
+        </div>
+        <div class="contact-right">
+          <img src="assets/img/006-like.png" alt="" />
+          <div class="right">
+            <a href="">Escribe</a>
+            <p>
+              Número de contacto +51 926 831 100
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Blog creado como parte del curso de Sistema Operativos, de la escuela profesional de Ing. de Sistemas. UNSA-AQP.</p><br>
+    </footer>
+  </body>
+</html>
